@@ -93,6 +93,7 @@
 
 <div class="container mt-4">
     <nav class="mb-4">
+        <a href="{{ route('home') }}" class="btn btn-outline-primary">Главная</a>
         <a href="{{ route('clothes.index') }}" class="btn btn-outline-primary">Каталог</a>
         <a href="{{ route('about') }}" class="btn btn-outline-info">О магазине</a>
     @auth

@@ -4,7 +4,10 @@ use App\Http\Controllers\BasketController;
 use App\Http\Controllers\ClotheController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ClotheController::class, 'index'])->name('home');
+//Route::get('/', [ClotheController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return view('home');
+})->name('home');
 
 Route::get('/dashboard', function () {
     return redirect()->route('home');
